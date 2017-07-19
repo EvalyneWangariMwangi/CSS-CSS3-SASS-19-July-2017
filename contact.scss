@@ -1,26 +1,62 @@
 //defining variables
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
+$bckcolor: #8B0000;
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
+.navigating{
+	width: 100%;
+	height: 50px;
+	border: 1px solid $bckcolor;
+	border-radius: 15px 50px 30px;
+	display: flex; /*===== flex property===*/
+	padding: 10px;
+	.logo{
+		width: 20%;
+		img{
+			width: 50%;
+		}
+	}.links{}
 }
-
-nav {
-  ul {
+nav{
+	display: block;
+	ul{
+	list-style-type: none;
     margin: 0;
     padding: 0;
-    list-style: none;
-  }
-
-  li { display: inline-block; }
-
-  a {
-    display: block;
-    padding: 6px 12px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 100%;
+	li{
+	float : right;
+	a{
+	display: block;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-  }
+    font-family: georgia;
+    font-size: 15px;
+    border-radius: 15px 50px 30px;
+    background: $bckcolor;
+    padding: 20px; 
+    width: 100px;
+    height: 5px; 
+    color: white;
+	}
+	}
+	}
+}
+
+.rotations{
+	height: 100px;
+	-ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+    -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); /* Safari */
+    transform: matrix(1, -0.3, 0, 1, 0, 0); 
+}
+.messaging{
+	 width: 960px / 960px * 100%;
+	 padding: 10px;
+	 margin: 50px;
 }
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
