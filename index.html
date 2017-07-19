@@ -32,71 +32,77 @@
 	<nav class="navigating">
 	<div class="logo"><img src="/images/logo.png" /> </div>
 		<ul class="links">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Breakfast</a></li>
-			<li><a href="#">Lunch</a></li>
 			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Foods</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Home</a></li>
 		</ul>
 	</nav>
 	<!--navigation-->
+
+	<!--start the web banner-->
 	<div class="slider">
 		<img src="/images/sliders/food1.jpg">
+		<div class="imgtxt"><h4>Where the laws of nature apply.</h4></div>
 	</div>
 	<hr>
-	<div class="columming">
-		<div class="coltext">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-		<div class="coltext">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-		<div class="coltext">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-	</div>
-	<hr>
-	<div>
-			<table style="width:100%">
-				  <tr>
-				    <th>Breakfast</th>
-				    <th>Lunch</th>
-				    <th>Snacks</th>
-				  </tr>
-				  <tr>
-				    <td><img src="/images/foods/breko2.jpeg"> </td>
-				    <td><img src="/images/foods/lunch1.jpeg"></td>
-				    <td><img src="/images/foods/snack3.jpeg"></td>
-				  </tr>
+	<!--end the web banner-->
 
-				</table>
+	<!--start cards-->
+	<div class="colunming">
+		<div class="colimg1">
+		<img src="/images/foods/breko2.jpeg">
+		<div class="cardtxt">Human rights start with breakfast.</div>
+		</div>
+		<div class="colimg2">
+			<img src="/images/foods/lunch1.jpeg">
+			<div class="cardtxt">Deliciousness jumping into the mouth</div>
+		</div>
+		<div class="colimg3">
+			<img src="/images/foods/snack3.jpeg">
+			<div class="cardtxt">The best or nothing</div>
+		</div>
 	</div>
-	<hr>
-	<footer class="footing">
-		<p>
+<!--end cards-->
+
+
+	<div class="para">
+		<p class="paragraph">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</p>
-	</footer>
+		<form class="formforpara">
+		<div class="inputs">
+		<legend style="color:#8B0000">Make your Bookings</legend>
+			<input type="text" placeholder="First Name" name="">
+			<input type="email" name="" placeholder="Email">
+			<select name="food">
+		    <option value="breakfast">Breakfast</option>
+		    <option value="lunch">Lunch</option>
+		    <option value="snack">Snacks</option>
+  		</select>
+		</div>
+  		<div class="txtplace">
+  			<textarea placeholder="Message"></textarea>
+  			<input type="submit" value="Submit" id="input-submit">
+  		</div>
+  		  
+		</form>
+	</div>
+</div>
+	<hr>
+|<div id="footer">
+    It Keeps Going, and Going, and Going… 
 </div>
 <!--end body content-->
   <script src="js/scripts.js"></script>

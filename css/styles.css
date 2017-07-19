@@ -41,7 +41,7 @@ li a{
     padding: 14px 16px;
     text-decoration: none;
     font-family: georgia;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 15px 50px 30px;
     background: #8B0000;
     padding: 20px; 
@@ -56,29 +56,140 @@ li a:hover:not(.active) {
     background-color: #8B0000;
 }
 
+/* ===== end Navigation ==== */
+
+/* === slider ===*/
 .slider{
 	margin-top: 5px;
-	width: 100%;
-}
+	max-width: 100%;
+    height: auto;
+    position: relative;
 
-/* ===== end Navigation ==== */
+}
+.slider img{
+	opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.imgtxt{
+	 position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 30px;
+    color: #8B0000;
+    font-family: arial;
+    font-style: italic;
+}
+/* === end slider ===*/
+
 hr{
 	border-top: 3px solid #8B0000;
 
 }
-.coltext{
-	-webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
-    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 40px; /* Firefox */
-    column-gap: 40px;
-    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
-    -moz-column-rule-style: solid; /* Firefox */
-    column-rule-style: solid;
-    column-rule-color:  #8B0000;
+.colunming{
+	display: flex;
+	display: -webkit-flex;
+	width: 100%;
+	padding: 10px;
 }
-.footing{
-	color: white;
-	background-color: #800000;
+/*=====  css cards start ===*/
+.colunming .colimg1{
+	width: 80%;
+  	background-color: white;
+  	box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	margin: 10px;
 }
+.colunming .colimg2{
+	width: 80%;
+  	background-color: white;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	margin: 10px;
+}
+.colunming .colimg3{
+	width: 80%;
+  	background-color: white;
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	margin: 10px;
+}
+.colunming img{
+	width: 100%;
+
+}
+.colunming .cardtxt{
+	text-align: center;
+  	padding: 10px 20px;
+  	font-family: arial;
+  	font-style: bold;
+  	font-size: 15px;
+}
+/* ===== end of cards ====*/
+
+/* ===== form ====*/
+.para{
+	display: flex;
+	width: 100%;
+}
+.para .paragraph{
+	width: 60%;
+}
+.para .formforpara{
+	width: 30%;
+	padding: 10px;
+}
+.formforpara{
+	 background: #f1f1f1;
+  	font-family: 'Merriweather', sans-serif;
+  	padding: 1em;
+  	display: flex;
+}
+
+form{
+	max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+}
+ textarea {
+ 	margin-top: 20px;
+      height: 80px;
+      border-radius: 5px;
+      border-color: #800000;
+  }
+input{
+	border-radius: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	width: 100%;
+	height: 20px;
+	border-color: #800000;
+}
+select{
+	border-radius: 5px;
+	border-color: #800000;
+	margin-top: 5px;
+	margin-right: 5px;
+	width: 100%;
+	height: 30px;
+}
+#input-submit{
+	color: white; 
+     background-color: #800000; 
+     border-radius: 5px;
+     width: 100px;
+     height: 30px;
+     border-color: #800000;
+}
+/* ===== end form ====*/
+
+/* ==== footer ====*/
+#footer{
+	margin-top: 10px; 
+  background-color: #212121;
+  height: 60px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  line-height: 50px;
+  color: #aaa;
+  text-align: center;
+  width: 100%;
+}
+/* === end of footer ====*/
