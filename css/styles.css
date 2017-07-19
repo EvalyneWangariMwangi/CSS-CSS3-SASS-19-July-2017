@@ -3,7 +3,7 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
 }
@@ -35,6 +35,7 @@ li a:hover:not(.active) {
 	float: right;
 }
 .slider{
+	margin-top: 5px;
 	width: 100%;
 }
 hr{
@@ -52,4 +53,8 @@ hr{
     -moz-column-rule-style: solid; /* Firefox */
     column-rule-style: solid;
     column-rule-color:  #8B0000;
+}
+.footing{
+	color: white;
+	background-color: #800000;
 }
