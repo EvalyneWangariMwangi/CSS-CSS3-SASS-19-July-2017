@@ -1,0 +1,67 @@
+<!--used sass to style-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sass styles</title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<!--google map script-->
+<script>
+	function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(-1.3, 36.7073085),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+<!--end google maps script-->
+
+<!--start google maps API-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9lpE_IrrmFw9xqyVmDg86yj7J98PBSGw&callback=myMap" async defer></script>
+<!--end google maps API-->
+</head>
+<body>
+<div class="wrapper">
+	<nav class="navigation">
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">About Us</a></li>
+			<li><a href="">Breakfast</a></li>
+			<li><a href="">Lunch</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+	</nav>
+	<div class="Contact">
+		<div class="messaging">
+		<form width="100%" class="box" border="1">
+			Name:<br>
+			<input type="text" name="" placeholder="John Doe"><br>
+			Email:<br>
+			<input type="email" name="" placeholder="john@cytonn.com"><br>
+			Message:<br>
+			<textarea></textarea><br>
+			<input type="Submit" name="" value="Send">
+		</form>
+	</div>
+	<div class="address">
+	<address>
+    You can contact us through: <a href="#">www.somedomain.com</a>.<br>
+    More information request, Email: webmaster@somedomain.com.<br>
+    You may also want to visit us:<br>
+    Fedha Plaza<br>
+    Mpaka Road<br>
+    Building K<br>
+    Bla bla bla<br>
+    Kenya
+  </address>
+	</div>
+	</div>
+	<!--map starts-->
+<div id="map" style="width:100%px;height:200px">
+	
+</div>
+<!--map end -->
+</div>
+</body>
+</html>
